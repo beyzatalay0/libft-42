@@ -1,0 +1,36 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/08/04 17:26:11 by beyatala          #+#    #+#             */
+/*   Updated: 2026/08/04 19:11:19 by beyatala         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+size_t ft_strlcpy(char *dest, const *src, size_t size)
+{
+    size_t = i;
+    i=0;
+    
+    if(size > 0)
+    {
+        while(src[i] !='\0')
+        {
+            dest[i]=src[i];
+            i++;
+        }
+        dest[i]='\0';
+    }
+    return *dest; 
+}
+
+int main()
+{
+    char dest[]="";
+    char src[]="beyza";
+    size_t size = 3;
+    printf("%s", dest);
+}
