@@ -6,13 +6,13 @@
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 13:31:41 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/04 16:26:55 by beyatala         ###   ########.fr       */
+/*   Updated: 2026/08/07 20:47:08 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int e)
+int	ft_isascii(int c)
 {
-    if(e>=0 && e<=127)
-        return 1;
-    return 0;
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

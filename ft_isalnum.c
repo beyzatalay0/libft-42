@@ -6,14 +6,15 @@
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 12:58:36 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/04 15:56:56 by beyatala         ###   ########.fr       */
+/*   Updated: 2026/08/05 12:51:13 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int e)
+int	ft_isalnum(int c)
 {
-	if ((e >= 'a' && e <= 'z') || (e >= 'A' && e <= 'Z') || 
-			(e >= '0'&& e <= '9'))
+	if ((c >= 'a' && c <= 'z') 
+		|| (c >= 'A' && c <= 'Z') 
+		|| (c >= '0'&& c <= '9'))
 		return (1);
 	return (0);
 }

@@ -6,13 +6,13 @@
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 16:29:42 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/04 17:24:07 by beyatala         ###   ########.fr       */
+/*   Updated: 2026/08/05 13:22:22 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int e)
+int	ft_toupper(int c)
 {
-	if (e >= 97 && e <= 122)
-		e -= 32;
-	return (e);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
 }

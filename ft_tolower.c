@@ -6,13 +6,13 @@
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 17:24:21 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/04 17:25:29 by beyatala         ###   ########.fr       */
+/*   Updated: 2026/08/05 13:21:52 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int e)
+int	ft_tolower(int c)
 {
-    if(e >=65 && e <=90)
-        e+=32;
-    return e;
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 }

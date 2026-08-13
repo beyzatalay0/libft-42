@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlen                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 15:57:10 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/05 12:53:11 by beyatala         ###   ########.fr       */
+/*   Created: 2026/08/04 13:27:53 by beyatala          #+#    #+#             */
+/*   Updated: 2026/08/05 13:32:30 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include <stddef.h>
+
+size_t	ft_strlen(const char *str)
 {
-	if (!(c >= 32 && c <= 126))
-		return (0);
-	return (1);
+	size_t	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

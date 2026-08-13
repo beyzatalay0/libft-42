@@ -6,13 +6,13 @@
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 12:42:07 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/04 12:56:57 by beyatala         ###   ########.fr       */
+/*   Updated: 2026/08/05 12:48:12 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int e)
+int	ft_isdigit(int c)
 {
-	if (e >= '0' && e <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

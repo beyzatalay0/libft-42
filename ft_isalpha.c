@@ -6,13 +6,13 @@
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:02:13 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/04 12:56:10 by beyatala         ###   ########.fr       */
+/*   Updated: 2026/08/05 12:46:19 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int e)
+int	ft_isalpha(int c)
 {
-	if ((e >= 'a' && e <= 'z') || (e >= 'A' && e <= 'Z'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }

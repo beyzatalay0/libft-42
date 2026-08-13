@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy                                         :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 17:26:11 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/04 19:11:19 by beyatala         ###   ########.fr       */
+/*   Created: 2026/08/07 18:58:17 by beyatala          #+#    #+#             */
+/*   Updated: 2026/08/09 21:54:32 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlcpy(char *dest, const *src, size_t size)
+#include <stddef.h>
+
+void ft_bzero(void *s, size_t n)
 {
-    size_t = i;
+    unsigned char *x = s;
+    size_t i;
     i=0;
+
     
-    if(size > 0)
+    while(i<n)
     {
-        while(src[i] !='\0')
-        {
-            dest[i]=src[i];
-            i++;
-        }
-        dest[i]='\0';
+        x[i]='\0';
+        i++;
     }
-    return *dest; 
+    //return 0;
 }
 
-int main()
-{
-    char dest[]="";
-    char src[]="beyza";
-    size_t size = 3;
-    printf("%s", dest);
-}
+// #include <stdio.h>
+// int main()
+// {
+//     unsigned char z[]= "12345";
+//     ft_bzero(z, 3);
+//     printf("%s", z+3);
+// }

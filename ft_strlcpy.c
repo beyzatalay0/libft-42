@@ -1,18 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 15:57:10 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/05 12:53:11 by beyatala         ###   ########.fr       */
+/*   Created: 2026/08/04 17:26:11 by beyatala          #+#    #+#             */
+/*   Updated: 2026/08/05 15:32:53 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include <stddef.h>
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	if (!(c >= 32 && c <= 126))
-		return (0);
-	return (1);
+	size_t	i;
+
+	i = 0;
+	if (size > 0)
+	{
+		while (src[i] != '\0' && i < size - 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+	}
+	while (src[i])
+	{
+		i++;
+	}
+	return (i);
 }

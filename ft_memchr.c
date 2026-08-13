@@ -1,18 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beyatala <beyatala@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 15:57:10 by beyatala          #+#    #+#             */
-/*   Updated: 2026/08/05 12:53:11 by beyatala         ###   ########.fr       */
+/*   Created: 2026/08/09 16:02:06 by beyatala          #+#    #+#             */
+/*   Updated: 2026/08/09 19:43:03 by beyatala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include <stddef.h>
+
+void *ft_memchr(const void *s, int c, size_t n)
 {
-	if (!(c >= 32 && c <= 126))
-		return (0);
-	return (1);
+    const unsigned char *str =(unsigned char *)s;
+    size_t i;
+    i = 0;
+    
+    while(i<n)
+    {
+        if(str[i] == (unsigned char)c)
+            return((void *)&str[i]);
+        i++;
+    }
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+    char a[]="beyza";
+    ft_memchr(a, 'z', 5);
+    printf("%p", a);
 }
